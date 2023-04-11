@@ -3,11 +3,11 @@ name: Deploy terraform Infrastructure
 on:
   push:
     branches:
-       -master
+       -main
     
 jobs:
   tf_fmt:
-    name: Deploy Site
+    name: Deploy s3-bucket
     runs-on: ubuntu-latest
     steps:
 
