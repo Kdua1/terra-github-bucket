@@ -1,7 +1,7 @@
 variable "region" {
-  description = "region"
-  type = string
-  default = "us-east-1"
+  description = "region for the s3 bucket"
+  type        = string
+  default     = "us-east-1"
 }
 
 variable "bucket" {
