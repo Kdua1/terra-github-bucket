@@ -11,20 +11,18 @@ jobs:
 
     - name: Checkout Repo
       uses: actions/checkout@v1
-
-    - name:
       uses: hashicorp/setup-terraform@v2
 
     - name: Terraform Init
-      id:  Terraform Init
+      id: init
       run: terraform init
     
     - name: Terraform plan
-      id: terraform plan
+      id: plan
       run: terraform plan
      
     - name: Terraform apply
-      id: Terraform Apply
+      id: apply
       run: terraform apply
       env:
         TF_ACTION_WORKING_DIR: 'terraform'
