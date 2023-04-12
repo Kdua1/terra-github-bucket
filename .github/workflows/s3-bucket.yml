@@ -10,8 +10,8 @@ jobs:
     steps:
 
     - name: Checkout Repo
-      uses: actions/checkout@v1
-      uses: hashicorp/setup-terraform@v2
+    - uses: actions/checkout@v1
+    - uses: hashicorp/setup-terraform@v2
 
     - name: Terraform Init
       id: init
