@@ -15,14 +15,15 @@ jobs:
     - name:
       uses: hashicorp/setup-terraform@v2
 
+    - name: Terraform Init
       id:  Terraform Init
       run: terraform init
     
-
+    - name: Terraform plan
       id: terraform plan
-      run: terreaform plan
+      run: terraform plan
      
-
+    - name: Terraform apply
       id: Terraform Apply
       run: terraform apply
       env:
