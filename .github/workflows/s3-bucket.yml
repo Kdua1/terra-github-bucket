@@ -8,10 +8,10 @@ jobs:
     name: Deploy s3-bucket
     runs-on: ubuntu-latest
     steps:
-
     - name: Checkout Repo
-    - uses: actions/checkout@v1
-    - uses: hashicorp/setup-terraform@v2
+      uses: actions/checkout@v1
+    - name: terraform set-up
+      uses: hashicorp/setup-terraform@v2
 
     - name: Terraform Init
       id: init
